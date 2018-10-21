@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>PdhReader.com</title>
+<style>
+html,body,div,span,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menuLivre, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menuLivre, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Default Styles 
+--------------------------------------------------------------------*/
+
+
+
+@media (min-width: 1200px)
+.container {
+max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+max-width: 540px;
+}
+.container {
+width: 100%;
+
+
+margin-right: auto;
+margin-left: auto;
+}
+.container1{
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+
+
+}
+.container2{
+text-align: center!important;
+flex: 0 0 100%;
+max-width: 100%;	
+}
+.h1, .h2, .h3, h1, h2, h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+
+
+.h1, .h2, .h3, h1, h2, h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+}
+h2, .h2 {
+font-size: 3.9rem;
+line-height: 4.5rem;
+font-family: 'Roboto','Segoe UI','Helvetica','Arial',sans-serif;
+font-weight: 500;
+font-style: normal;
+color: #404249;
+
+}
+body{
+background: #f7f7fa;
+font-family: 'Roboto','Segoe UI','Helvetica','Arial',sans-serif;
+
+}
+
+
+h3, .h3 {
+font-size: 2.9rem;
+line-height: 3.6rem;
+font-family: 'Roboto','Segoe UI','Helvetica','Arial',sans-serif;
+font-weight: 500;
+font-style: normal;
+color: rgb(64, 66, 73);
+}
+h3 span{
+border-bottom: 1px solid rgba(7,55,131,0.5);
+color: #073682;
+}
+.icon-pdh{
+margin-top: 20px;
+}
+
+.downloads {
+text-align: center;
+margin-bottom: 0;
+font-size: 18px;
+}
+
+.downloads .download {
+display: inline-block;
+text-align: center;
+background-color: #35b44f;
+background-color: #f23157;
+width: 160px;
+width: 100px;
+height: 95px;
+margin: 15px;
+padding: 20px 30px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: #fff;
+margin-bottom: 40px;
+}
+strong, b {
+    font-weight: bold;
+}
+a:link, a:visited {
+color: #30a247;
+text-decoration: none;
+font-size: 
+}
+img.icon-window{
+margin-bottom: 10px;
+}
+
+.bottom-site{
+position: fixed;
+bottom: 0;
+width: 100%;
+text-align: center;
+background: #242424;
+height:37px;
+}
+.info{
+color: #6B6B6B;
+line-height: 37px;
+font-size: 14px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="container1">
+<div class="container2">
+	<img class="icon-pdh" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3MWQ1NTg0YS04ZmIwLTUwNDctOWYwZi0zYWYyNGRhYjhkYzIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjUxOEI4OEY4NjVCMTFFN0EzQkZGRjkyNEYxNTVCQzQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjUxOEI4OEU4NjVCMTFFN0EzQkZGRjkyNEYxNTVCQzQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjcxZDU1ODRhLThmYjAtNTA0Ny05ZjBmLTNhZjI0ZGFiOGRjMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3MWQ1NTg0YS04ZmIwLTUwNDctOWYwZi0zYWYyNGRhYjhkYzIiLz4gPC9y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
+" width="" alt="">
+	<h2>Pdh Reader</h2>
+	<h3>v <span>1.0</span></h3>
+
+
+
+<p class="downloads">
+
+<a class="download download-windows" href="">
+	<img class="icon-window" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAA9lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+xt8V8AAAAUXRSTlMAAQIDBAUGBwgJCgsMDhATFBUWFxocHR8gIyYqLS4vMjY4OTw+QkVMT1BUVlteYWZrcHR4fIOLjpGYnaOrrbCyt7rBw8jK09ng5Onr7fX5+/1y2Df5AAAAzElEQVRIx2NgIAWwCclpEamUkUtUUdfcxT8QCAipZeKVVDWwcg9EAjjVsvJLqxvbegdiAizOFZTVZGawCcQJkJzLKaKgY+bsBxLlYLDDq4WJR0JF39INWZSAFk8sogS0BI5qGdUyUrU4YAGsDCYOOAEDnYARFsDMoGGEE4zG/qiWEazFyY9kLcAqXkBGw8TehxQtUMDMJ6VmaO1BihZY/c8trszEYEmKFnhDR0xJz8I1gAQtMMAuLK9t6uhLihYoYAG3grxI0YLU1mIAAP5nTfeOix0yAAAAAElFTkSuQmCC
+" width="32px" title="Pdh Reader for Windows">
+
+	<strong>Download</strong> 
+	for Windows
+</a>
+
+
+</p>
+
+
+
+
+
+</div><!--End container2-->
+</div>
+</div>
+
+<div class="bottom-site">
+<p class="info">© fareselbouali@gmail.com—2018</p>
+</div>
+
+</body>
+</html>
